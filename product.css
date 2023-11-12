@@ -1,0 +1,175 @@
+.container {
+  max-width: 960px;
+}
+
+.icon-link > .bi {
+  width: .75em;
+  height: .75em;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+/*
+ * custom
+ */
+
+body {
+	margin: 0;
+	font-family: Tahoma,Verdana,Segoe,sans-serif; 
+	font-size: 14px;
+	font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        line-height: 23px;
+	color: #000;
+        background-color: #eee;
+	text-align: left;
+
+}
+
+/*
+ * Colors
+ */
+.baby-powder{ color: #F8F7F2;}
+.safety-orange{ color: #FF7A08;}
+.peach{ color: #F1B993;}
+.wine{ color: #593037;}
+.chili-red{ color: #DE2E0F;}
+
+.baby-powder-bg{ background-color: #F8F7F2;}
+.safety-orange-bg{ background-color: #FF7A08;}
+.peach-bg{ background-color: #F1B993;}
+.wine-bg{ background-color: #593037;}
+.chili-red-bg{ background-color: #DE2E0F;}
+
+/*
+ * Font system
+ */
+
+h1 {
+     font-family: Tahoma, Verdana, Segoe, sans-serif;
+     font-size: 23px;
+     font-style: normal;
+     font-variant: normal;
+     font-weight: 700;
+     line-height: 23px;
+}
+ h3 {
+     font-family: Tahoma, Verdana, Segoe, sans-serif;
+     font-size: 17px;
+     font-style: normal;
+     font-variant: normal;
+     font-weight: 700;
+     line-height: 23px;
+}
+ p {
+     font-family: Tahoma, Verdana, Segoe, sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-variant: normal;
+     font-weight: 400;
+     line-height: 23px;
+}
+ blockquote {
+     font-family: Tahoma, Verdana, Segoe, sans-serif;
+     font-size: 17px;
+     font-style: normal;
+     font-variant: normal;
+     font-weight: 400;
+     line-height: 23px;
+}
+ pre {
+     font-family: Tahoma, Verdana, Segoe, sans-serif;
+     font-size: 11px;
+     font-style: normal;
+     font-variant: normal;
+     font-weight: 400;
+     line-height: 23px;
+}
+
+
+.header-bg{background-color: #321a0f;}
+
+
+.nav-link{
+  color: #fff !important;
+  font-size: 25px;
+}
+.nav-link:hover{
+  color: #FF7A08 !important;
+ 
+}
+
+
+
+.banner{
+    background-image: url('http://stickers.local/assets/img/funnyStickersBanner_2.png');
+    height: 500px;
+    background-size: cover;
+}
+
+
