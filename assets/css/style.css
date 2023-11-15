@@ -8,7 +8,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333333;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 title-font{
@@ -70,7 +70,7 @@ p {
 .baby-powder{ color: #F8F7F2;}
 .safety-orange{ color: #FF7A08;}
 .peach{ color: #F1B993;}
-.wine{ color: #593037;}
+.wine{ color: #321a0f;}
 .chili-red{ color: #DE2E0F;}
 
 
@@ -118,7 +118,11 @@ Images
     margin-top: 5px;
 }
 
-.header-bg{background-color: #321a0f;}
+.header{background-color: #321a0f;}
+.footer{
+    background-color: #321a0f;
+    padding: 70px 0;
+}
 
 
 
