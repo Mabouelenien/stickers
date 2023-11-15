@@ -257,3 +257,19 @@ margin
 	transform: scale(1.3);
 }
 
+.light-link{
+  color: #FF7A08 !important;
+  text-decoration: none;
+  display: block;
+}
+.light-link:hover{
+  color: #FFF !important;
+  text-decoration: none;
+ 
+}
+
+.footer .light-link{
+    font-size: 15px;
+    margin: 0 10px;
+    font-weight: bold;
+}
