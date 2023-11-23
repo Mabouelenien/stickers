@@ -9,8 +9,8 @@
         <title>Funny Stickers</title>
 
         <!-- Custom styles -->
-        <link href="assets/css/style.css" rel="stylesheet">
-        <link href="assets/css/responsive.css" rel="stylesheet">
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/responsive.css" rel="stylesheet">
 
         <link rel="icon" type="image/png" href="favicon.png">
 
@@ -20,7 +20,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <a href="./"><img class="menu-logo" src="assets/img/funnyStickersLogo.png" alt="Logo"></a>
+                        <a href="./"><img class="menu-logo" src="../assets/img/funnyStickersLogo.png" alt="Logo"></a>
                     </div>
                     <div class="col-md-9">
                         <div class="">
@@ -34,66 +34,25 @@
             </div>
         </header>
 
+
+
         <main>
             <div class="container-fluid p-0" 
                  >
-                <img class="img-fluid" src="assets/img/funnyStickersBanner.png" alt="Banner">
+                <img class="img-fluid" src="../assets/img/funnyStickersBanner.png" alt="Banner">
 
             </div>
 
 
             <div class="container pt-50 pb-50">
-                <div class="row" id="products">
-                  
-                </div>
-
-            </div>
-
-        </main>
-
-        <footer class="container-fluid footer">
-            <div class="container">
                 <div class="row">
-                <div class="col-md-3 text-center">
-                    <small class="text-white">&copy; 2023–2024</small>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a class="light-link" href="v1">version 1</a>
-                </div>
-                <div class="col-md-2 text-center">
-                    <a class="light-link" href="v2">version 2</a>
-                </div>
-            </div>
-            </div>
-        </footer>
-
-        <script>
-            
-            document.addEventListener("DOMContentLoaded", () => {
-                // DOM has loaded
-               getAllProducts();
-              });
- 
-            function getAllProducts(){
-                const xhr = new XMLHttpRequest();
-                xhr.open("GET", "http://localhost:8000/products");
-                xhr.send();
-                xhr.responseType = "json";
-                xhr.onload = () => {
-                  if (xhr.readyState == 4 && xhr.status == 200) {
-                    const productsData = xhr.response;
-                    const productsDiv = document.getElementById("products");
-                    products.innerHTML = '';
-                    for(var p in productsData) {
-                        console.log(productsData[p]);
-                        // use template strings (backticks). It will also allow you to insert dynamic content via ${...}:
-                        productsDiv.innerHTML += `<div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
                         <div class="card text-black text-center">
-                            <img src="assets/img/funny-stickers/${productsData[p][3]}"
+                            <img src="../assets/img/funny-stickers/sticker_1.png"
                                  class="card-img-top zoom-in" alt="funny-stickers" />
                             <div class="card-body">
                                 <div class="price-block text-center text-secondary">
-                                    <span class="price">$${productsData[p][2]}</span><span class="old-price text-danger">$${productsData[p][2] + 3.49}</span>
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
                                 </div>
                                 <div class="">
                                     <button type="button" class="btn btn-primary">Buy now</button>
@@ -101,16 +60,198 @@
                             </div>
                         </div>
                     </div>
-                    `;
-                     }
-                        
-                  } else {
-                    console.log(`Error: ${xhr.status}`);
-                  }
-                };
-            }
-            
-            
-        </script>
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_2.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_3.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_4.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_5.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_6.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_7.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_8.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_9.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_10.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_11.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 p-5">
+                        <div class="card text-black text-center">
+                            <img src="../assets/img/funny-stickers/sticker_12.png"
+                                 class="card-img-top zoom-in" alt="funny-stickers" />
+                            <div class="card-body">
+                                <div class="price-block text-center text-secondary">
+                                    <span class="price">$14.99</span><span class="old-price text-danger">$16.99</span>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                
+            </div>
+
+        </main>
+
+        <footer class="container-fluid footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <small class="text-white">&copy; 2023–2024</small>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a class="light-link" href="/stickers">last version</a>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a class="light-link" href="v1">version 1</a>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a class="light-link" href="v2">version 2</a>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a class="light-link" href="v3">version 3</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </body>
 </html>

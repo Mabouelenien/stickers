@@ -1,0 +1,10 @@
+https://pythonbasics.org/webserver/
+
+# 1-  install DB Browser for SQLite
+https://sqlitebrowser.org/
+
+
+# 2- then  run local server 
+open cmd and go to -> C:\wamp64\www\stickers.local\v2\api
+
+then run - > python .\index.py

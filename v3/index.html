@@ -9,8 +9,8 @@
         <title>Funny Stickers</title>
 
         <!-- Custom styles -->
-        <link href="assets/css/style.css" rel="stylesheet">
-        <link href="assets/css/responsive.css" rel="stylesheet">
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/responsive.css" rel="stylesheet">
 
         <link rel="icon" type="image/png" href="favicon.png">
 
@@ -20,7 +20,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <a href="./"><img class="menu-logo" src="assets/img/funnyStickersLogo.png" alt="Logo"></a>
+                        <a href="./"><img class="menu-logo" src="../assets/img/funnyStickersLogo.png" alt="Logo"></a>
                     </div>
                     <div class="col-md-9">
                         <div class="">
@@ -37,7 +37,7 @@
         <main>
             <div class="container-fluid p-0" 
                  >
-                <img class="img-fluid" src="assets/img/funnyStickersBanner.png" alt="Banner">
+                <img class="img-fluid" src="../assets/img/funnyStickersBanner.png" alt="Banner">
 
             </div>
 
@@ -53,7 +53,7 @@
 
         <footer class="container-fluid footer">
             <div class="container">
-                <div class="row">
+                 <div class="row">
                     <div class="col-md-3 text-center">
                         <small class="text-white">&copy; 2023–2024</small>
                     </div>
@@ -82,9 +82,7 @@
  
             function getAllProducts(){
                 const xhr = new XMLHttpRequest();
-                const localServerUrl = 'http://localhost:8000/api?query=products';
-                const onlineServerURl = 'https://stickers-apiv1.vercel.app/api?query=products';
-                xhr.open("GET", onlineServerURl);
+                xhr.open("GET", "http://localhost:8000/products");
                 xhr.send();
                 xhr.responseType = "json";
                 xhr.onload = () => {
@@ -97,7 +95,7 @@
                         // use template strings (backticks). It will also allow you to insert dynamic content via ${...}:
                         productsDiv.innerHTML += `<div class="col-lg-3 col-md-4 col-sm-6 p-5">
                         <div class="card text-black text-center">
-                            <img src="assets/img/funny-stickers/${productsData[p][3]}"
+                            <img src="../assets/img/funny-stickers/${productsData[p][3]}"
                                  class="card-img-top zoom-in" alt="funny-stickers" />
                             <div class="card-body">
                                 <div class="price-block text-center text-secondary">
