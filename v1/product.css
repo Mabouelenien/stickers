@@ -173,3 +173,13 @@ h1 {
 }
 
 
+.light-link{
+  color: #FF7A08 !important;
+  text-decoration: none;
+  display: block;
+}
+.light-link:hover{
+  color: #FFF !important;
+  text-decoration: none;
+ 
+}
