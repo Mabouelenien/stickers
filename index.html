@@ -84,7 +84,7 @@
                 const xhr = new XMLHttpRequest();
                 const localServerUrl = 'http://localhost:8000/api?query=products';
                 const onlineServerURl = 'https://stickers-apiv1.vercel.app/api?query=products';
-                xhr.open("GET", onlineServerURl);
+                xhr.open("GET", localServerUrl);
                 xhr.send();
                 xhr.responseType = "json";
                 xhr.onload = () => {
