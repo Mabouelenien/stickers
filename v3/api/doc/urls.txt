@@ -5,6 +5,9 @@ https://sqlitebrowser.org/
 
 
 # 2- then  run local server 
-open cmd and go to -> C:\wamp64\www\stickers.local\v2\api
+open cmd and go to -> C:\wamp64\www\stickers.local\v3\api
 
 then run - > python .\index.py
+
+
+https://www.redbubble.com/g/stickers
