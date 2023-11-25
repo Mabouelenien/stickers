@@ -22,13 +22,20 @@
                     <div class="col-md-3">
                         <a href="./"><img class="menu-logo" src="../assets/img/funnyStickersLogo.png" alt="Logo"></a>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-6">
                         <div class="">
                             <a href="#" class="nav-link">Stickers</a>
                         </div>
                         <div class="">
                             <a href="#" class="nav-link">Labels</a>
                         </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="cart">
+                            <span class="count" id="cart-top-qty">0</span>
+                            <!--   <span class="count">1</span> -->
+                            <img src="../assets/img/shopping-cart-128.png" class="material-icons" alt="cart">
+                          </div>
                     </div>
                 </div>
             </div>
@@ -92,20 +99,27 @@
                     products.innerHTML = '';
                     for(var p in productsData) {
                         console.log(productsData[p]);
+                        let product = productsData[p];
+                        let str = product[4]
+                        let title = str;
+                        if (str.length>25) {
+                            title = str.substring(0, 25) + "..."
+                        }
+                        
                         // use template strings (backticks). It will also allow you to insert dynamic content via ${...}:
                         productsDiv.innerHTML += `<div class="col-lg-3 col-md-4 col-sm-6 p-5">
-                        <div class="card text-black text-center">
-                            <img src="../assets/img/funny-stickers/${productsData[p][3]}"
-                                 class="card-img-top zoom-in" alt="funny-stickers" />
-                            <div class="card-body">
-                                <div class="price-block text-center text-secondary">
-                                    <span class="price">$${productsData[p][2]}</span><span class="old-price text-danger">$${productsData[p][2] + 3.49}</span>
-                                </div>
-                                <div class="">
-                                    <button type="button" class="btn btn-primary">Buy now</button>
+                        <a href="item-details.html?q=${product[1]}">
+                            <div class="card card-img-top text-black text-center pt-20">
+                                <img src="../assets/img/stickers/${product[3]}"
+                                     class="zoom-in" alt="funny-stickers" />
+                                <div class="card-body">
+                                    <strong>${title}</strong>
+                                    <div class="price-block text-secondary">
+                                        <span class="price">From $${product[2]}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     `;
                      }
